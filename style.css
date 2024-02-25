@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.black-bg {
+    width : 100%;
+    height : 0%;
+    position : fixed;
+    background : rgba(0,0,0,0.5);
+    z-index : 5;
+    padding: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+.white-bg {
+    background: white;
+    border-radius: 5px;
+    padding: 30px;
+} 
+
+.showModal{
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+#login{
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: aqua;
+}
