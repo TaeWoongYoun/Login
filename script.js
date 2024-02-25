@@ -20,6 +20,16 @@ $('#send').on('click', function(e){
     }
 });
 
-document.querySelector('.black-bg').addEventListener('click', function(){
-    document.querySelector('.black-bg').classList.remove('showModal');
+document.querySelector('.black-bg').addEventListener('click', function(e){
+
+    // function에 e 넣으면 사용 가능
+    //e.target; //유저가 실제로 누른거
+    //e.currentTarget; //이벤트리스너 달린 곳
+    //e.preventDefault(); //이벤트 기본동작 막아줌
+    //e.stopImmediatePropagation();
+
+
+    if(e.target == document.querySelector('.black-bg')){
+        document.querySelector('.black-bg').classList.remove('showModal');
+    }
 })
