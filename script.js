@@ -1,3 +1,4 @@
+// 이벤트 버블링은 항상 일어난다 기억하자
 
 $('#login').on('click', function(){
     $('.black-bg').addClass('showModal');
